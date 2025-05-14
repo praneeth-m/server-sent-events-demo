@@ -67,17 +67,21 @@ const interactionApiResponseMessages = [
     progress: null,
     response: {
       agentId: '12345',
-      messages: [
-        {
-          id: 'xyz',
-          content: {
-            type: 'text',
-            text: '1 + 2 = 3',
+      response: {
+        type: 'result',
+        cursor: 'jhdshfkljdshfjhjksdhflkhflhdfsa',
+        messages: [
+          {
+            id: 'xyz',
+            content: {
+              type: 'text',
+              text: '1 + 2 = 3',
+            },
+            actionId: 'abc_321',
+            role: 'action',
           },
-          actionId: 'abc_321',
-          role: 'action',
-        },
-      ],
+        ],
+      },
     },
   },
 ]
